@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
+
+:root {
+    --supervisor-color: hsl(180, 62%, 55%);
+    --teamBuilder-color: hsl(0, 78%, 62%);
+    --karma-color: hsl(34, 97%, 64%);
+    --calculator-color: hsl(212, 86%, 64%);
+    --box-heading-color: hsl(229, 6%, 66%);
+    --main-heading-color: hsl(234, 12%, 34%);
+    --background-color: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--background-color);
+}
+
+.text p {
+    width: 35%;
+    font-weight: 200;
+    color: var(--main-heading-color);
+}
+
+.text .p1 {
+    font-size: 2em;
+}
+
+.text h1 {
+    font-weight: 600;
+    color: var(--main-heading-color);
+    margin-top: 0px;
+}
+
+.box {
+    width: 325px;
+    height: 200px;
+    background-color: white;
+    box-shadow: -5px 10px 10px 5px hsl(0deg 0% 90%);
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.box p {
+    color: var(--box-heading-color);
+    font-size: 12px;
+}
+
+.box .h5 {
+    color: var(--main-heading-color);
+}
+
+.box svg {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+}
+
+.box-1 {
+    border-top: 4px solid var(--supervisor-color);
+    margin-left: 5rem;
+}
+
+.box-2 {
+    border-top: 4px solid var(--teamBuilder-color);
+}
+
+.box-3 {
+    border-top: 4px solid var(--karma-color);
+}
+
+.box-4 {
+    border-top: 4px solid var(--calculator-color);
+    margin-right: 5rem;
+}
+
+.h5 {
+    font-weight: 600 !important;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:769px) {
+    .text p {
+        width: 85%;
+        font-weight: 200;
+        color: var(--main-heading-color);
+    }
+    
+    .text .p1 {
+        font-size: 1.6em;
+    }
+    
+    .text h1 {
+        font-size: 1.6em;
+    }
+    
+    .box {
+        margin: 1rem auto !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .text p {
+        width: 80%;
+    }
+
+    .box {
+        width: 300px;
+        height: 195px;
+    }
+
+    .box-1 {
+        margin-left: 0rem;
+    }
+}
